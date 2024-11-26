@@ -202,15 +202,22 @@ void LotteryGame::play() {
     encore = (encoreChoice == 'y' || encoreChoice == 'Y');
 
     if (encore) {
-        cout << "Enter Encore number manually or generate randomly? (m/r): ";
         char manualOrRandom;
-        cin >> manualOrRandom;
+        while (true) {
+            cout << "Enter Encore number manually or generate randomly? (m/r): ";
+            cin >> manualOrRandom;
+            manualOrRandom = tolower(manualOrRandom); // Convert input to lowercase for easier comparison
+            if (manualOrRandom == 'm' || manualOrRandom == 'r') {
+                break; // Exit loop on valid input
+            }
+            cout << "Invalid input! Please enter 'm' for manual or 'r' for random.\n";
+        }
 
         if (manualOrRandom == 'm') {
             cout << "Enter a 7-digit Encore number: ";
             Utils::validateInput(encoreNumber, 1000000, 9999999, "Please enter a valid 7-digit number: ");
         }
-        else if(manualOrRandom == 'r') {
+        else {
             encoreNumber = rand() % 9000000 + 1000000; // Generate 7-digit number
             cout << "Generated Encore Number: " << setw(7) << setfill('0') << encoreNumber << "\n";
         }
