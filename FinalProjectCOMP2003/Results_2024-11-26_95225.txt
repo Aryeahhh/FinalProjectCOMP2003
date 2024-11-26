@@ -1,0 +1,64 @@
+Lottery Results
+Winning Numbers:  2  6 19 25 32 33 | Bonus: 42
+Winning Encore Number: 4445337
+
+Line 1: 23 10 15 43 02 34  | Matches: 1 | Prize: $0.00
+Line 2: 32 31 37 47 25 07  | Matches: 2 | Prize: $0.00
+Line 3: 40 08 16 35 27 41  | Matches: 0 | Prize: $0.00
+Line 4: 04 33 24 20 10 29  | Matches: 1 | Prize: $0.00
+Line 5: 39 32 35 15 46 43  | Matches: 1 | Prize: $0.00
+Line 6: 44 19 29 33 27 25  | Matches: 3 | Prize: $10.00
+Line 7: 02 37 20 11 19 28  | Matches: 2 | Prize: $0.00
+Line 8: 17 39 01 49 18 35  | Matches: 0 | Prize: $0.00
+Line 9: 49 39 06 05 46 11  | Matches: 1 | Prize: $0.00
+Line 10: 12 18 48 11 17 24  | Matches: 0 | Prize: $0.00
+Line 11: 42 33 46 28 24 39  | Matches: 1 + Bonus | Prize: $0.00
+Line 12: 24 11 42 08 32 16  | Matches: 1 + Bonus | Prize: $0.00
+Line 13: 27 25 18 37 22 14  | Matches: 1 | Prize: $0.00
+Line 14: 30 46 26 31 21 48  | Matches: 0 | Prize: $0.00
+Line 15: 08 16 23 20 11 10  | Matches: 0 | Prize: $0.00
+Line 16: 13 48 47 32 34 23  | Matches: 1 | Prize: $0.00
+Line 17: 01 07 35 24 47 05  | Matches: 0 | Prize: $0.00
+Line 18: 16 07 26 14 01 23  | Matches: 0 | Prize: $0.00
+Line 19: 46 42 17 37 12 28  | Matches: 0 + Bonus | Prize: $0.00
+Line 20: 08 20 26 28 34 23  | Matches: 0 | Prize: $0.00
+Line 21: 27 26 39 03 25 33  | Matches: 2 | Prize: $0.00
+Line 22: 17 37 01 29 04 06  | Matches: 1 | Prize: $0.00
+Line 23: 24 48 09 14 47 28  | Matches: 0 | Prize: $0.00
+Line 24: 33 32 14 34 49 03  | Matches: 2 | Prize: $0.00
+Line 25: 15 10 02 49 13 33  | Matches: 2 | Prize: $0.00
+Line 26: 01 27 09 08 19 13  | Matches: 1 | Prize: $0.00
+Line 27: 28 23 46 02 05 26  | Matches: 1 | Prize: $0.00
+Line 28: 40 20 38 14 44 36  | Matches: 0 | Prize: $0.00
+Line 29: 35 11 17 43 20 42  | Matches: 0 + Bonus | Prize: $0.00
+Line 30: 30 31 36 29 18 23  | Matches: 0 | Prize: $0.00
+Line 31: 09 02 28 38 46 20  | Matches: 1 | Prize: $0.00
+Line 32: 21 17 13 24 05 42  | Matches: 0 + Bonus | Prize: $0.00
+Line 33: 21 22 38 07 34 26  | Matches: 0 | Prize: $0.00
+Line 34: 06 03 08 37 10 38  | Matches: 1 | Prize: $0.00
+Line 35: 46 48 08 03 05 14  | Matches: 0 | Prize: $0.00
+Line 36: 22 28 10 07 47 24  | Matches: 0 | Prize: $0.00
+Line 37: 37 47 43 18 16 01  | Matches: 0 | Prize: $0.00
+Line 38: 35 27 38 21 08 20  | Matches: 0 | Prize: $0.00
+Line 39: 32 36 39 26 30 28  | Matches: 1 | Prize: $0.00
+Line 40: 02 40 17 27 05 21  | Matches: 1 | Prize: $0.00
+Line 41: 18 26 08 19 24 31  | Matches: 1 | Prize: $0.00
+Line 42: 04 14 22 38 26 46  | Matches: 0 | Prize: $0.00
+Line 43: 30 11 38 12 05 15  | Matches: 0 | Prize: $0.00
+Line 44: 20 18 02 42 32 36  | Matches: 2 + Bonus | Prize: $3.00
+Line 45: 02 15 18 10 30 45  | Matches: 1 | Prize: $0.00
+Line 46: 25 05 16 15 01 43  | Matches: 1 | Prize: $0.00
+Line 47: 23 30 34 28 14 26  | Matches: 0 | Prize: $0.00
+Line 48: 26 27 20 05 47 39  | Matches: 0 | Prize: $0.00
+Line 49: 08 27 29 47 14 32  | Matches: 1 | Prize: $0.00
+Line 50: 11 37 09 35 30 43  | Matches: 0 | Prize: $0.00
+Line 51: 48 10 30 20 29 31  | Matches: 0 | Prize: $0.00
+Line 52: 07 21 36 16 33 05  | Matches: 1 | Prize: $0.00
+Line 53: 46 28 34 43 11 02  | Matches: 1 | Prize: $0.00
+Line 54: 42 34 16 12 31 46  | Matches: 0 + Bonus | Prize: $0.00
+Line 55: 35 34 05 47 22 12  | Matches: 0 | Prize: $0.00
+Line 56: 27 07 28 35 19 03  | Matches: 1 | Prize: $0.00
+Line 57: 02 04 48 15 03 26  | Matches: 1 | Prize: $0.00
+Line 58: 15 40 05 18 03 04  | Matches: 0 | Prize: $0.00
+Line 59: 30 49 28 29 45 47  | Matches: 0 | Prize: $0.00
+Line 60: 39 02 24 49 20 40  | Matches: 1 | Prize: $0.00
