@@ -13,7 +13,7 @@ using namespace std;
 const int MIN_NUM = 1;
 const int MAX_NUM = 49;
 const int NUMBERS_PER_LINE = 6;
-const int LINE_COST = 3;
+const int LINE_COST = 1;
 
 const vector<int> WINNING_NUMBERS = { 2, 6, 19, 25, 32, 33 };
 const int BONUS_NUMBER = 42;
