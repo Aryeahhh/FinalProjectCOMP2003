@@ -192,41 +192,62 @@ void LotteryGame::saveResultsToFile(const string& filename) {
 
 // Play Game
 void LotteryGame::play() {
-    displayRules();
-    cout << "Enter number of lines to play (1-30): ";
-    Utils::validateInput(numLines, 1, 30, "Please enter a valid number of lines (1-30): ");
-
-    char encoreChoice;
-    cout << "Would you like to play Encore for $1? (y/n): ";
-    Utils::validateCharInput(encoreChoice, "Please enter 'y' or 'n': ");
-    encore = (encoreChoice == 'y' || encoreChoice == 'Y');
-
-    if (encore) {
-        char manualOrRandom;
-        while (true) {
-            cout << "Enter Encore number manually or generate randomly? (m/r): ";
-            cin >> manualOrRandom;
-            manualOrRandom = tolower(manualOrRandom); // Convert input to lowercase for easier comparison
-            if (manualOrRandom == 'm' || manualOrRandom == 'r') {
-                break; // Exit loop on valid input
+    char playAgain;
+    
+    do{
+        displayRules();
+        cout << "Enter number of lines to play (1-30): ";
+        Utils::validateInput(numLines, 1, 30, "Please enter a valid number of lines (1-30): ");
+    
+        char encoreChoice;
+        cout << "Would you like to play Encore for $1? (y/n): ";
+        Utils::validateCharInput(encoreChoice, "Please enter 'y' or 'n': ");
+        encore = (encoreChoice == 'y' || encoreChoice == 'Y');
+    
+        if (encore) {
+            char manualOrRandom;
+            while (true) {
+                cout << "Enter Encore number manually or generate randomly? (m/r): ";
+                cin >> manualOrRandom;
+                manualOrRandom = tolower(manualOrRandom); // Convert input to lowercase for easier comparison
+                if (manualOrRandom == 'm' || manualOrRandom == 'r') {
+                    break; // Exit loop on valid input
+                }
+                cout << "Invalid input! Please enter 'm' for manual or 'r' for random.\n";
             }
-            cout << "Invalid input! Please enter 'm' for manual or 'r' for random.\n";
+    
+            if (manualOrRandom == 'm') {
+                cout << "Enter a 7-digit Encore number: ";
+                Utils::validateInput(encoreNumber, 1000000, 9999999, "Please enter a valid 7-digit number: ");
+            }
+            else {
+                encoreNumber = rand() % 9000000 + 1000000; // Generate 7-digit number
+                cout << "Generated Encore Number: " << setw(7) << setfill('0') << encoreNumber << "\n";
+            }
         }
-
-        if (manualOrRandom == 'm') {
-            cout << "Enter a 7-digit Encore number: ";
-            Utils::validateInput(encoreNumber, 1000000, 9999999, "Please enter a valid 7-digit number: ");
+    
+        totalCost = numLines * LINE_COST + (encore ? 1 : 0);
+        cout << "Total cost: $" << fixed << setprecision(2) << totalCost << "\n";
+    
+        generateTicket();
+        saveTicketToFile(Utils::generateFilename("Ticket"));
+        saveResultsToFile(Utils::generateFilename("Results"));
+        
+        cout << endl;
+        
+        while (true) {
+            cout << "Would you like to play again? (y/n): ";
+            cin >> playAgain;
+            playAgain = tolower(playAgain); 
+            
+            if (playAgain == 'y' || playAgain == 'n') {
+                break; 
+            } else {
+                cout << "Invalid input! Please enter 'y' for yes or 'n' for no.\n";
+            }
         }
-        else {
-            encoreNumber = rand() % 9000000 + 1000000; // Generate 7-digit number
-            cout << "Generated Encore Number: " << setw(7) << setfill('0') << encoreNumber << "\n";
-        }
-    }
-
-    totalCost = numLines * LINE_COST + (encore ? 1 : 0);
-    cout << "Total cost: $" << fixed << setprecision(2) << totalCost << "\n";
-
-    generateTicket();
-    saveTicketToFile(Utils::generateFilename("Ticket"));
-    saveResultsToFile(Utils::generateFilename("Results"));
+            
+        } while (playAgain == 'y' || playAgain == 'Y');
+        
+        cout << "Thank you for playing! \n" << endl;
 }
